@@ -1,71 +1,89 @@
 @font-face{
+	font-family:"Ortica";
+	src: url("font/Ortica-Light.otf") format("opentype");
+}
+@font-face{
 	font-family: HokusGlitz;
-	src: url("fonts/HokusGlitz-Regular.ttf") format("truetype"); 
+	src: url("font/HokusGlitz-Regular.ttf") format("truetype"); 
 
 }
 
 @font-face{
 	font-family:TyperVariable ;
-	src: url("fonts/TyperVariableGX.ttf") format("truetype"); 
+	src: url("font/TyperVariableGX.ttf") format("truetype"); 
 
 }
 
 @font-face{
 	font-family: CowboySerif;
-	src: url("fonts/Cowboyserif-regular.ttf") format("truetype"); 
+	src: url("font/Cowboyserif-regular.ttf") format("truetype"); 
 
 }
 
-@font-face{
-	font-family: Ortica;
-	src: url("fonts/Ortica-Light.otf") format("open-type"); 
+body{
+	overflow:none;
+	background-color:black;
+	color:white;
 
 }
 
-@font-face {
-	font-family: "MyFont1";
-	src: url("fonts/FoundersGroteskMonoLight.otf") format("opentype");
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
+h2{
+	font-family:"Ortica", helvetica;
+	font-size:6vh;
+	line-height:42px;
+	font-weight:normal;
+	margin-bottom:0%;
+	margin-top:0%;
+	letter-spacing:1px;
+}
 }
 
-@font-face{
-	font-family: ;
-	src: url(); 
-
+/* PHONE */
+@media screen and (max-width: 600px) {
+h2{
+	font-family:"Ortica", helvetica;
+	font-size:3vh;
+	line-height:4vh;
+	font-weight:normal;
+	margin-bottom:0%;
+	margin-top:0%;
+	letter-spacing:1px;
+}
 }
 
-body,html {
-	background-color: #E8E9E9;
-	color:black;
-	cursor:auto;
-	
-}
-
-header {
-    font-family:"MyFont1";
-    color:black;
-    margin-top:0px;
-    display: flex;
-    justify-content: space-around;
-    /*position:-webkit-sticky;
-    position:sticky;*/
-  position:-webkit-sticky;
-  position:sticky;
-  top:10px;
-  text-decoration: none;
-}
-a:link, a:visited {
-	color:black;
-	background-color:transparent;
-	text-decoration:none;
-}
-
-a:hover, a:active {
-	color:#FEE501;
-	background-color:transparent;
-	text-decoration:none;
- }
-
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
 h1{
+	font-family:"Ortica", helvetica;
+	font-size:4vh;
+	line-height:5vh;
+
+	font-weight:normal;
+	
+	/*text-indent:33px;*/
+	margin-bottom:5%;
+	margin-top:0%;
+}
+}
+
+/* PHONE */
+@media screen and (max-width: 600px) { 
+h1{
+	font-family:"Ortica", helvetica;
+	font-size:2.5vh;
+	line-height:3.5vh;
+	font-weight:normal;
+	
+	/*text-indent:33px;*/
+	margin-bottom:5%;
+	margin-top:0%;
+}
+}
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
+h3{
 	font-family:"Ortica";
 	font-weight:normal;
 	font-size: 2.5vw;
@@ -74,10 +92,60 @@ h1{
 	padding: 0% 2% 0% 2%;
 	margin:0% 10% 0% 10%;
 	justify-content: space-between;
+	color:white;
+}	
+}
+
+/* PHONE */
+@media screen and (max-width: 600px) { 
+h3{
+	font-family:"Ortica";
+	font-weight:normal;
+	font-size: 2.5vw;
+	max-font-size:18px;
+	display:flex;
+	padding: 0% 2% 0% 2%;
+	margin:0% 2.5% 0% 2.5%;
+	justify-content: space-between;
+	color:white;
+}	
+}
+
+p{
+	font-family:"Ortica", helvetica;
+	font-weight:normal;
+	font-size:35px;
+	display:flex;
+	justify-content:center;
+	padding-top:150px;
+	
 	
 }
 
+#hokus{
+	font-family:"HokusGlitz";
+	color:black;
+	font-weight:normal;
+	
+}
 
+#typer{
+	font-family: "TyperVariable";
+	font-variation-settings: "wght" 100;
+	font-weight:normal;
+	transition:4s;
+	color:black;
+}
+
+#cowboy{
+	font-family:"CowboySerif";
+	color:black;
+	font-weight:normal;
+	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
 .font{
 	
 	font-size:50px;
@@ -87,6 +155,7 @@ h1{
 	justify-content: flex-start;
 	padding: 2% 2% 2% 2%;
 	border:2px black solid;
+	background-color:white;
 	margin:0% 10% 2% 10%;
 	cursor:text;
     overflow-x: scroll;
@@ -95,31 +164,89 @@ h1{
 	   height:10vw;
        white-space:nowrap;
 	letter-spacing: 0.3vw;
+}	
+}
+
+/* PHONE */
+@media screen and (max-width: 600px) { 
+.font{
 	
+	font-size:50px;
+	font-size:5vw;
+	line-height:10px;
+	display:flex;
+	justify-content: flex-start;
+	padding: 2% 2% 2% 2%;
+	border:2px black solid;
+	background-color:white;
+	margin:0% 2.5% 2% 2.5%;
+	cursor:text;
+    overflow-x: scroll;
+       overflow-y: hidden;
+       height: 100px;
+	   height:10vw;
+       white-space:nowrap;
+	letter-spacing: 0.3vw;
+}	
+}
+
+
+
+
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
+.image{
+	
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:10px;	
+}
+}
+
+/* PHONE */
+@media screen and (max-width: 600px) { 
+.image{
+	
+	width:95%;
+	margin-left:2.5%;
+	margin-right:2.5%;
+	margin-bottom:10px;	
+}
+}
+video{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;	
+
+     height: auto;
+     margin-bottom: 4vh;
+     margin-top: 4vh;
+	 border:none;
+	 position:center;
+	 display:flex;
+ 	flex-wrap:wrap;
+ 	align-content:center;
+ 	flex-direction:column;
 	
 }
 
 
-
-#space{
-	height:15vw;
-	padding-top: 5vw;
-}
-
-
-#hokus{
-	font-family:"HokusGlitz";
+.videowrapper{
 	
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
+	flex-direction:column;
 }
 
-#typer{
-	font-family: "TyperVariable";
-	font-variation-settings: "wght" 100;
-	font-weight:normal;
-	transition:4s;
+a:link, a:visited {
+	color:white;
+	background-color:transparent;
+	text-decoration:none;
 }
 
-#cowboy{
-	font-family:"CowboySerif";
-	
-}
+a:hover, a:active {
+	color:	#F0E68C;
+	background-color:transparent;
+	text-de
